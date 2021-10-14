@@ -16,7 +16,7 @@ body
 
 .container
   position: relative
-  width: 1600px
+  width: 1200px
   display: flex
   justify-content: center
   align-items: center
@@ -29,13 +29,20 @@ body
     width: 350px
     height: 280px
     background: #51446e
-    border-radius: j0px
+    border-radius: 20px
     overflow: hidden
+
     &:hover .icon  
-     width: 800px 
+     width: 80px 
      height: 80px
-     border: 50%
-    
+     border-radius: 50% 
+     top: 30px
+     left: calc(50% - 40px)
+     transition-delay: 0s
+
+     ion-icon
+      transition-delay: 0s
+      font-size: 2em
 
     .icon
       position: absolute
@@ -43,5 +50,44 @@ body
       left: 0
       width: 100%
       height: 100%
-      background: #f00
+      background: var(--i)
       transition: 0.5s
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 2
+      transition-delay: 0.25s
+
+      ion-icon
+        font-size: 5em
+        color: #fff
+        transition: .5s
+        transition-delay: 0s
+
+
+    &:hover .content
+      //top: 30px
+      //left: calc(50% - 40px)
+      //width: 80px
+      //height: 80px
+      //border-radius: 50%
+      transform: scale(1)
+      transition-delay: 0.25s
+
+    .content
+      position: relative
+      padding: 20px
+      color: #fff
+      text-align: center
+      margin-top: 100px
+      z-index: 1
+      transition: .5s
+      transition-delay: 0s
+      transform: scale(0)
+
+      h2
+        margin-top: 10px
+        margin-bottom: 5px
+      p
+        font-weight: 300
+        line-height: 1.5em

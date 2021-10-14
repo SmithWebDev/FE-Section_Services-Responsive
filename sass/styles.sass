@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500700&display=swap')
+
+* 
+  padding:0
+  margin:0
+  box-sizing: border-box
+  font-family: 'Ubuntu', sans-serif
+
+
+body 
+  display: flex
+  justify-content: center
+  align-items: center
+  max-height: 100vh
+  background: #3f3752
+
+.container
+  position: relative
+  width: 1600px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 20px
+  flex-wrap: wrap
+  overflow: hidden
+
+  .serviceBox
+    position: relative
+    width: 350px
+    height: 280px
+    background: #51446e
+    border-radius: j0px
+    overflow: hidden
+    &:hover .icon  
+     width: 800px 
+     height: 80px
+     border: 50%
+    
+
+    .icon
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: #f00
+      transition: 0.5s
